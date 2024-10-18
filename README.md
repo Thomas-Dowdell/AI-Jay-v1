@@ -1,25 +1,22 @@
-# AI-Jay-v1
+# Jay, the AI Assistant On Your Local Machine
 
-Welcome to AI-Jay-v1, an open-source AI assistant that can perform various tasks and answer questions automatically.
+Welcome to Jay, an open-source AI assistant that can help with any general-purpose text tasks, all on your local machine.
+Jay is a large language model, built atop Llama 3.1 8B (https://huggingface.co/meta-llama/Llama-3.1-8B). However, Jay's strengths comes from it's tool-use: the LLM is prompted with a set of tools to use, from life admin like searching calendars to more complicated tasks like searching the internet.
 
-## What can I do?
+The LLM is built atop llama.cpp (https://github.com/ggerganov/llama.cpp), which allows quantized language models to be run efficiently and quickly, even on CPU-only computers.
 
-I can help with a wide range of tasks, including
+## What can Jay do?
+
+Jay can help with a wide range of tasks, including
 * Searching the internet to answer questions.
 * Providing information on news, weather and calendar events.
 * Performing calculations and solving math problems.
 * Playing music from a playlist.
 * Sending emails and setting reminders.
 
-## How do I work?
-
-I am an LLM, built atop Llama-3.1-8B.
-In order to run, I require the following dependencies:
-* 'llama-cpp-python'
-* Access to 'together.ai', and an API key for together.ai.
+In order to run, Jay requires the following dependencies:
+* 'llama-cpp'
 * A credentials file for Google Calendar.
-I can be run either online from together.ai, or on your local machine using llama-cpp-python.
+The Google Calendar credentials file is optional, as it is only necessary for calendar functions.
 
-## How do I work?
-
-Simple! Either download a Llama-3.1.8b gguf model or get a together.ai API, run "main.py" and run me.
+Jay is still in very early days, and begun as an experiment to test small language models' (10B parameters or less) ability to use tools. After a year of experimentation and development, I have found my approach to be accurate. I have found it to be so accurate that I use Jay in my day-to-day life.
